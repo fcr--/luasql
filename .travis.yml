@@ -20,8 +20,7 @@ before_install:
 # - luarocks install busted
 
 install:
-  - luarocks make # Install the rock, assuming there is a rockspec
-                  # in the root of the repository.
+  - luarocks make rockspec/luasql-mysql-2.4.0-1.rockspec
   - make mysql
 
 script:
