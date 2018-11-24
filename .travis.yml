@@ -20,7 +20,7 @@ before_install:
 # - luarocks install busted
 
 install:
-  - luarocks make rockspec/luasql-mysql-2.4.0-1.rockspec
+  - luarocks make rockspec/luasql-mysql-2.4.0-1.rockspec MYSQL_INCDIR=/usr/include/mysql
   - make mysql
 
 script:
